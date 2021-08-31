@@ -19,9 +19,9 @@ return (
         <div className="mt-6 grid gap-6 lg:grid-cols-2 xl:grid-cols-3 ">
 
           {destinations.map(destination => (
-            <div key={destination.city} className="flex items-center rounded-lg bg-white shadow-lg overflow-hidden m-4">
-                    <img className="h-32 w-32 flex-shrink-0 flex-grow" src={destination.imageUrl} alt={destination.imageAlt}/>
-                    <div className="px-6 py4">
+            <div key={destination.city} className="flex items-center rounded-lg bg-white shadow-lg overflow-hidden m-0">
+                    <img className="h-32 w-32" src={destination.imageUrl} alt={destination.imageAlt}/>
+                    <div className="px-2 py4">
                         <h3 className="text-lg font-semi-bold text-gray-800">{destination.city}</h3>
                         <p className="text-gray-600">${destination.averagePrice} / night average</p>
                         
